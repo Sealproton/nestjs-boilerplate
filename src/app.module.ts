@@ -19,5 +19,5 @@ import { APP_PIPE } from '@nestjs/core';
       useValue: new ValidationPipe({ whitelist: true }),
     },
   ],
-}),
+})
 export class AppModule {}
