@@ -1,7 +1,7 @@
 name ?= default_name
 
 migration-generate:
-	yarn migration:generate ./src/db/migrations/$(name)
+	yarn migration:generate --name=$(name)
 
 up: 
 	docker-compose up -d
